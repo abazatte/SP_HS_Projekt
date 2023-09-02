@@ -25,10 +25,10 @@
 
 ### Free Test Character Asuna
 
-- **Source URL**: [Free Test Character Asuna](https://www.cgtrader.com/free-3d-models/character/sci-fi-character/free-test-character-asuna)
+- **Source URL**: [Free Test Character Asuna](https://assetstore.unity.com/packages/3d/characters/humanoids/sci-fi/free-test-character-asuna-205897)
 - **Date of Access**: 2023-08-30
 - **Type**: 3D Model
-- **Version**: N/A
+- **Version**: 2.1
 
 ---
 
