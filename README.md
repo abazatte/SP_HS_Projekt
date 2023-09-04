@@ -6,7 +6,6 @@
 - [Features](#-features)
 - [Installation](#-installation)
 - [Usage](#️-usage)
-- [TODO](#️-todo)
 
 ---
 
