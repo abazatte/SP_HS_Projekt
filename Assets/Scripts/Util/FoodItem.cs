@@ -1,12 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
+using NaughtyAttributes;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Food Item", menuName = "Food Item")]
-public class FoodItem : ScriptableObject
+namespace Util
 {
-    public string itemName;
-    public string itemDescription;
-    public Sprite itemIcon;
-    public int foodValue;
+    [CreateAssetMenu(fileName = "New Food Item", menuName = "Food Item")]
+    public class FoodItem : ScriptableObject
+    {
+        public string itemName;
+        public string itemDescription;
+        [ShowAssetPreview] public Sprite itemIcon;
+        public int foodValue;
+    }
 }
