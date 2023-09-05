@@ -3,31 +3,22 @@ using UnityEngine;
 
 public class StatSystem : MonoBehaviour
 {
-    [ProgressBar("Health", 100, EColor.Red)]
+    [ProgressBar("Health", 100f, EColor.Red)]
     public float currentHealth;
-    [ProgressBar("Food", 100, EColor.Green)]
+    [ProgressBar("Food", 100f, EColor.Green)]
     public float currentFood;
-    [ProgressBar("Water", 100, EColor.Blue)]
-    public float currentWater;
+    [ProgressBar("Water", 100f)] public float currentWater;
 
     [Header("Stat Parameters")]
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private float maxFood = 100f;
     [SerializeField] private float maxWater = 100f;
-    [SerializeField] private float attackPower = 10f;
-
 
     private void Awake()
     {
         currentHealth = maxHealth;
-        currentFood = maxFood;
-        currentWater = maxWater;
-    }
-
-    public void TakeDamage(float damage)
-    {
-        currentHealth -= damage;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        currentFood = 20f;
+        currentWater = 20f;
     }
 
     public void ConsumeFood(float amount)
