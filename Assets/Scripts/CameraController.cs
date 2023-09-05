@@ -50,6 +50,6 @@ public class CameraController : MonoBehaviour, AxisState.IInputAxisProvider
 
     private void OnLook(InputAction.CallbackContext context)
     {
-        lookInput = context.ReadValue<Vector2>() * sensitivity;
+        lookInput = new Vector2(-context.ReadValue<Vector2>().x, -context.ReadValue<Vector2>().y) * sensitivity;
     }
 }
