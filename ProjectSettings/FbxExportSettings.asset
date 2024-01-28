@@ -1,3 +1,42 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af8afae3d149e1196a19ffb9f1aa28dc6a6955be9ef196c0174dd9e60f6c9999
-size 1255
+{
+    "MonoBehaviour": {
+        "m_Enabled": true,
+        "m_EditorHideFlags": 0,
+        "m_Name": "FBX Export Settings",
+        "m_EditorClassIdentifier": "",
+        "Verbose": false,
+        "launchAfterInstallation": true,
+        "HideSendToUnityMenu": true,
+        "BakeAnimation": false,
+        "showConvertToPrefabDialog": true,
+        "integrationSavePath": "C:\\UnityProjects\\SP_HS_Projekt",
+        "selectedDCCApp": 0,
+        "prefabSavePaths": [
+            "."
+        ],
+        "fbxSavePaths": [
+            "."
+        ],
+        "selectedFbxPath": 0,
+        "selectedPrefabPath": 0,
+        "dccOptionNames": [],
+        "dccOptionPaths": [],
+        "exportModelSettingsSerialize": {
+            "exportFormat": 0,
+            "animatedSkinnedMesh": false,
+            "mayaCompatibleNaming": true,
+            "include": 2,
+            "lodLevel": 0,
+            "objectPosition": 0,
+            "exportUnrendered": true,
+            "preserveImportSettings": false,
+            "keepInstances": true,
+            "embedTextures": false
+        },
+        "convertToPrefabSettingsSerialize": {
+            "exportFormat": 0,
+            "animatedSkinnedMesh": false,
+            "mayaCompatibleNaming": true
+        }
+    }
+}
