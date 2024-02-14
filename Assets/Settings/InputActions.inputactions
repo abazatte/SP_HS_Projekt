@@ -28,15 +28,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Look",
-                    "type": "Value",
-                    "id": "2e56afc3-e70e-49ae-9ebd-8a55d4cb55b5",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -127,10 +118,27 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
+                }
+            ]
+        },
+        {
+            "name": "Camera",
+            "id": "592db438-b0c8-490f-8492-71364031757b",
+            "actions": [
+                {
+                    "name": "Look",
+                    "type": "Value",
+                    "id": "bc543076-bf51-4f2a-a1fb-36ad0a23fd35",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
                 {
                     "name": "",
-                    "id": "589a8c32-bcc5-461e-8ff0-628ee2de00ec",
+                    "id": "46b389af-349a-4ebf-8796-1887b705a0bd",
                     "path": "<Pointer>/delta",
                     "interactions": "",
                     "processors": "",
@@ -141,7 +149,7 @@
                 },
                 {
                     "name": "",
-                    "id": "498f968b-e7c4-437f-b3a1-4e0482d12399",
+                    "id": "e5e76682-f4c0-4972-b447-b35e161c37ed",
                     "path": "<Gamepad>/rightStick",
                     "interactions": "",
                     "processors": "",
