@@ -126,6 +126,15 @@
             "id": "592db438-b0c8-490f-8492-71364031757b",
             "actions": [
                 {
+                    "name": "Zoom",
+                    "type": "Value",
+                    "id": "f7b5c1eb-70ec-4627-9c6d-0469feea0764",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
                     "name": "Look",
                     "type": "Value",
                     "id": "bc543076-bf51-4f2a-a1fb-36ad0a23fd35",
@@ -155,6 +164,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "51b956ba-2210-46e2-9369-ac04ef8b80c3",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Zoom",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
