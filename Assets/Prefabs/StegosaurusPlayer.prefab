@@ -65,6 +65,12 @@ PrefabInstance:
       addedObject: {fileID: 5737426470526595819}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ba17cf8f7d95b4c4cb623f07cb998c84, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 102565966500396609}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ba17cf8f7d95b4c4cb623f07cb998c84, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7280635714429162464}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ba17cf8f7d95b4c4cb623f07cb998c84, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1404678975071213189}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ba17cf8f7d95b4c4cb623f07cb998c84, type: 3}
       insertIndex: -1
@@ -135,6 +141,41 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!95 &102565966500396609
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944206602870079732}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3c52e76617aff9b4499ab3f2483ae324, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7280635714429162464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944206602870079732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0706f849ba1a66e4fa258134186111ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSettings: {fileID: 11400000, guid: 165980a84880b4641a1d8b76c01cf267, type: 2}
+  playerInputReader: {fileID: 11400000, guid: 6a30525c98e050d4ea1c417e733cefc2, type: 2}
 --- !u!114 &1404678975071213189
 MonoBehaviour:
   m_ObjectHideFlags: 0
