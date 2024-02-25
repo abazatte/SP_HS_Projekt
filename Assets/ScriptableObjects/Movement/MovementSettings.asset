@@ -12,16 +12,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42efc9b4c7364d4c9ba50220dd35f1d7, type: 3}
   m_Name: MovementSettings
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  rotationSpeed: 5
+  moveSpeed: 0
+  rotationSpeed: 0
+  acceleration: 0
+  accelerationRate: 0
+  decelerationRate: 0
   defaultMovement:
     moveSpeed: 5
     rotationSpeed: 5
+    acceleration: 0
+    accelerationRate: 1.5
+    decelerationRate: 2
   layerMask:
     serializedVersion: 2
     m_Bits: 0
-  maxDistance: 0.2
-  offset: {x: 0, y: 0.1, z: 0}
+  maxDistance: 0
+  offset: {x: 0, y: 0, z: 0}
   defaultGround:
     layerMask:
       serializedVersion: 2
