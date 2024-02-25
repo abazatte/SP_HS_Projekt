@@ -50,7 +50,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ba17cf8f7d95b4c4cb623f07cb998c84, type: 3}
       propertyPath: m_Name
-      value: StegoPlayer Variant
+      value: StegosaurusPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ba17cf8f7d95b4c4cb623f07cb998c84, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -61,13 +65,13 @@ PrefabInstance:
       addedObject: {fileID: 5737426470526595819}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ba17cf8f7d95b4c4cb623f07cb998c84, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6599275805558634899}
+      addedObject: {fileID: 1404678975071213189}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ba17cf8f7d95b4c4cb623f07cb998c84, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6508015500791773956}
+      addedObject: {fileID: 19014933415175709}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ba17cf8f7d95b4c4cb623f07cb998c84, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8539689790078783745}
+      addedObject: {fileID: 6190167878368765200}
     - targetCorrespondingSourceObject: {fileID: 1781657834327113732, guid: ba17cf8f7d95b4c4cb623f07cb998c84, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5481312774856323135}
@@ -127,11 +131,11 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &6599275805558634899
+--- !u!114 &1404678975071213189
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -155,27 +159,9 @@ MonoBehaviour:
   middleRigRadiusMultiplier: 0.6
   bottomRigHeightMultiplier: 0.1
   bottomRigRadiusMultiplier: 0.3
-  zoomAction: {fileID: 0}
+  zoomAction: {fileID: -7195536517051812538, guid: e9d265b109f288f4d996a8ceeeb147ae, type: 3}
   zoomSpeed: 1
---- !u!114 &6508015500791773956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1944206602870079732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 686d799c542b4e34caf5156c7efbe859, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 0
-  currentFood: 0
-  currentWater: 0
-  maxHealth: 100
-  maxFood: 100
-  maxWater: 100
---- !u!114 &8539689790078783745
+--- !u!114 &19014933415175709
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,12 +173,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184ac7ce838cd114ca1025b878ab2394, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actionAsset: {fileID: -944628639613478452, guid: e9d265b109f288f4d996a8ceeeb147ae, type: 3}
-  speed: 5
-  jumpForce: 20
-  groundCheckDistance: 0.2
-  groundCheckOffset: {x: 0, y: 0.1, z: 0}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
+  rb: {fileID: 0}
   cameraTransform: {fileID: 0}
+  playerInputReader: {fileID: 11400000, guid: 6a30525c98e050d4ea1c417e733cefc2, type: 2}
+  movementSettings: {fileID: 11400000, guid: 165980a84880b4641a1d8b76c01cf267, type: 2}
+--- !u!114 &6190167878368765200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944206602870079732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 686d799c542b4e34caf5156c7efbe859, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerAttributes: {fileID: 11400000, guid: f5b46c9993f51534b9799660441208cd, type: 2}
+  healthChangedEvent: {fileID: 11400000, guid: 620cd5f63ded9c440804d4ec8b2609c7, type: 2}
+  hungerChangedEvent: {fileID: 11400000, guid: e8acd7604df1f1040b95ef4fb42d7a15, type: 2}
+  thirstChangedEvent: {fileID: 11400000, guid: 7eeee7fce22c4b344be724b47908a424, type: 2}
