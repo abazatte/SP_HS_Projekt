@@ -29,14 +29,47 @@ namespace DinoGame.Input
         public void OnLook(InputAction.CallbackContext context)
         {
             LookEvent?.Invoke(context.ReadValue<Vector2>());
+
+            if (context.started)
+            {
+                LookEventStarted?.Invoke(context.ReadValue<Vector2>());
+            }
+            else if (context.performed)
+            {
+                LookEventPerformed?.Invoke(context.ReadValue<Vector2>());
+            }
+            else if (context.canceled)
+            {
+                LookEventCancelled?.Invoke(context.ReadValue<Vector2>());
+            }
         }
 
         public void OnZoom(InputAction.CallbackContext context)
         {
             ZoomEvent?.Invoke(context.ReadValue<float>());
+
+            if (context.started)
+            {
+                ZoomEventStarted?.Invoke(context.ReadValue<float>());
+            }
+            else if (context.performed)
+            {
+                ZoomEventPerformed?.Invoke(context.ReadValue<float>());
+            }
+            else if (context.canceled)
+            {
+                ZoomEventCancelled?.Invoke(context.ReadValue<float>());
+            }
         }
 
         public event Action<Vector2> LookEvent;
+        public event Action<Vector2> LookEventStarted;
+        public event Action<Vector2> LookEventPerformed;
+        public event Action<Vector2> LookEventCancelled;
+
         public event Action<float> ZoomEvent;
+        public event Action<float> ZoomEventStarted;
+        public event Action<float> ZoomEventPerformed;
+        public event Action<float> ZoomEventCancelled;
     }
 }

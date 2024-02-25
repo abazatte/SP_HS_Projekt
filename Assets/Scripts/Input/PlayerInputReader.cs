@@ -29,8 +29,24 @@ namespace DinoGame.Input
         public void OnMove(InputAction.CallbackContext context)
         {
             MoveEvent?.Invoke(context.ReadValue<Vector2>());
+
+            if (context.started)
+            {
+                MoveEventStarted?.Invoke(context.ReadValue<Vector2>());
+            }
+            else if (context.performed)
+            {
+                MoveEventPerformed?.Invoke(context.ReadValue<Vector2>());
+            }
+            else if (context.canceled)
+            {
+                MoveEventCancelled?.Invoke(context.ReadValue<Vector2>());
+            }
         }
 
         public event Action<Vector2> MoveEvent;
+        public event Action<Vector2> MoveEventStarted;
+        public event Action<Vector2> MoveEventPerformed;
+        public event Action<Vector2> MoveEventCancelled;
     }
 }
