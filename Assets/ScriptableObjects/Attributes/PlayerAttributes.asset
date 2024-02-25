@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 768cc990f09146dda5b4cecb2ccdd097, type: 3}
+  m_Name: PlayerAttributes
+  m_EditorClassIdentifier: 
+  health: 20
+  hunger: 20
+  thirst: 20
+  startHealth: 20
+  maxHealth: 100
+  startHunger: 20
+  maxHunger: 100
+  startThirst: 20
+  maxThirst: 100
