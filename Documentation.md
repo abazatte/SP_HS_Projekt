@@ -27,8 +27,8 @@ Export Type: FBX
 	- Add Leaf Bones: False
 - ### Bake Animation: True
 	- Key All Bones: True
-	- NLA Strips: False
-	- All Actions: True
+	- NLA Strips: True
+	- All Actions: False
 	- Force Start/End Keying: False
 	- Sampling Rate: 1.00
 	- Simplify: 1.00
