@@ -1,8 +1,8 @@
 {
-    "name": "InputActions",
+    "name": "GameInput",
     "maps": [
         {
-            "name": "UI",
+            "name": "Ui",
             "id": "974b91df-24d1-42c3-a188-b179f193d7a0",
             "actions": [],
             "bindings": []
@@ -19,40 +19,9 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
-                },
-                {
-                    "name": "Jump",
-                    "type": "Button",
-                    "id": "25ad796b-eb90-4782-8e1c-543219b03c29",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "cefa8595-3d8d-47b9-8f90-dfc513df5bdc",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "d20a6c4f-c1b8-4e29-bed9-98e444e6549b",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Jump",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "WASD",
                     "id": "15af3cca-ef33-47a3-86ab-98866a9bc81a",
